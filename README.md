@@ -1,5 +1,12 @@
 # rrename
 
+This script helps me to keep my jellyfin library organized. 
+If I add a new Movie, i have an unsorted folder for this.
+When the added movie is identified by jellyfin (and nfo writing is on for the library),
+This little script renames me the movie name and folder structure in this format:
+
+_MOVIENAME (YEAR) [imdbid-IMDBID]/MOVIENAME (YEAR) [imdbid-IMDBID].suffix_
+
 ## config
 The config can be set in the following places:
 1. config file at: ~/.config/rrename/config.json:
