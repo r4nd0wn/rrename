@@ -1,3 +1,5 @@
+#!/usr/bin/env bun
+
 import { Glob } from "bun";
 import * as fs from "fs";
 import { MovieFile } from "./src/MovieFile";
