@@ -49,4 +49,20 @@ To run:
 bun run index.ts
 ```
 
+## bundle with bun
+
+It is quite easy and fast to create your target by yourself.
+
+0. install bun:
+[bun.sh](https://bun.sh)
+
+1. clone the package:
+```bash
+git clone git@github.com:r4nd0wn/rrename.git
+```
+
+2. install dependencies (fast-xml-parser)
+```bash
+bun install
+```
 
