@@ -23,6 +23,13 @@ bun run index.ts --src=/mnt/unsortedStuff/ --dest=/mnt/hugeMovieLibrary-sorted/
 rrename --src=/mnt/unsortedStuff/ --dest=/mnt/hugeMovieLibrary-sorted/
 ```
 
+The priority for those are:
+1. arvs
+2. ENV
+3. config file
+
+## run with bun
+
 To install dependencies:
 
 ```bash
