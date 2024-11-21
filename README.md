@@ -71,7 +71,7 @@ bun install
 ./bundle.sh
 ```
 
-For me (M4 base model mac mini), it took 0.308 seconds in total to bundle. Remember, this is not compiling, it just packs the bun executable a file.
+For me (M4 base model mac mini), it took 0.308 seconds in total to bundle. Remember, this is not compiling, it just packs the bun executable and the script in a file.
 ```bash
 r4nd0wn@Mac rrename % time ./bundle.sh 
   [17ms]  minify  -43.26 KB (estimate)
