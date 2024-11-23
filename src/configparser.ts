@@ -4,7 +4,7 @@ import { existsSync, readFileSync } from 'fs'
 export class ConfigParser {
   private _sourceDirectory!: string;
   private _destDirectory!: string;
-  private _configPathLikeNix = "~/.config/rrename/config.json";
+  private _configPathLikeNix = "/.config/rrename/config.json";
   private _writeFile: boolean = true;
   constructor() {
     /**
@@ -12,7 +12,10 @@ export class ConfigParser {
      * 2nd prio is env
      * 1st prio is args
      */
-    if (this.isNix) this._parseNixConfig();
+    if (this.isNix) {
+      this._configPathLikeNix = process.env.HOME + this._configPathLikeNix;
+      this._parseNixConfig();
+    }
     if (process.env.SOURCE)
       this._sourceDirectory = process.env.SOURCE;
     if (process.env.DEST)
